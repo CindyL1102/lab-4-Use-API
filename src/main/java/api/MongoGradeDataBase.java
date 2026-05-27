@@ -19,7 +19,7 @@ import okhttp3.Response;
  */
 public class MongoGradeDataBase implements GradeDataBase {
     // Defining some constants.
-    private static final String API_URL = "http://vm003.teach.cs.toronto.edu:20112";
+    private static final String API_URL = System.getenv("API_BASE_URL");
     private static final String CONTENT_TYPE = "Content-Type";
     private static final String APPLICATION_JSON = "application/json";
     private static final String STATUS_CODE = "status_code";
